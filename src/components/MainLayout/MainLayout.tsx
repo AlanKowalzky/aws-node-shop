@@ -4,6 +4,7 @@ import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
 import Header from "~/components/MainLayout/components/Header";
 import Box from "@mui/material/Box";
+import { Outlet } from "react-router-dom";
 
 function Copyright() {
   return (
@@ -18,13 +19,13 @@ function Copyright() {
   );
 }
 
-const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const MainLayout: React.FC = () => {
   return (
     <>
       <Header />
       <main>
         <Container sx={{ pb: 8 }} maxWidth="md">
-          {children}
+          <Outlet />
         </Container>
       </main>
       <Box
