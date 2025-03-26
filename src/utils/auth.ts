@@ -8,7 +8,10 @@
  * @param password - The password
  * @returns Base64 encoded Basic Auth token
  */
-export const createBasicAuthToken = (username: string, password: string): string => {
+export const createBasicAuthToken = (
+  username: string,
+  password: string
+): string => {
   const token = btoa(`${username}:${password}`);
   return token;
 };
@@ -20,19 +23,21 @@ export const createBasicAuthToken = (username: string, password: string): string
 export const initializeAuth = async (): Promise<void> => {
   try {
     // Use credentials from environment variables
-    const username = import.meta.env.VITE_REACT_APP_AUTH_USERNAME || '';
-    const password = import.meta.env.VITE_REACT_APP_AUTH_PASSWORD || '';
-    
+    const username = import.meta.env.VITE_REACT_APP_AUTH_USERNAME || "";
+    const password = import.meta.env.VITE_REACT_APP_AUTH_PASSWORD || "";
+
     if (!username || !password) {
-      console.warn('Authentication credentials not found in environment variables');
+      console.warn(
+        "Authentication credentials not found in environment variables"
+      );
       return;
     }
-    
+
     const token = createBasicAuthToken(username, password);
-    localStorage.setItem('authorization_token', token);
-    console.log('Authentication initialized successfully');
+    localStorage.setItem("authorization_token", token);
+    console.log("Authentication initialized successfully");
   } catch (error) {
-    console.error('Error initializing authentication:', error);
+    console.error("Error initializing authentication:", error);
   }
 };
 
@@ -41,7 +46,7 @@ export const initializeAuth = async (): Promise<void> => {
  * @returns The Basic Auth token or null if not available
  */
 export const getAuthToken = (): string | null => {
-  return localStorage.getItem('authorization_token');
+  return localStorage.getItem("authorization_token");
 };
 
 /**

@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import MainLayout from '~/components/MainLayout/MainLayout';
-import PageProductForm from '~/components/pages/PageProductForm/PageProductForm';
-import PageCart from '~/components/pages/PageCart/PageCart';
-import PageOrders from '~/components/pages/PageOrders/PageOrders';
-import PageOrder from '~/components/pages/PageOrder/PageOrder';
-import PageProducts from '~/components/pages/PageProducts/PageProducts';
-import PageProductImport from '~/components/pages/admin/PageProductImport/PageProductImport';
-import { initializeAuth } from '~/utils/auth';
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "~/components/MainLayout/MainLayout";
+import PageProductForm from "~/components/pages/PageProductForm/PageProductForm";
+import PageCart from "~/components/pages/PageCart/PageCart";
+import PageOrders from "~/components/pages/PageOrders/PageOrders";
+import PageOrder from "~/components/pages/PageOrder/PageOrder";
+import PageProducts from "~/components/pages/PageProducts/PageProducts";
+import PageProductImport from "~/components/pages/admin/PageProductImport/PageProductImport";
+import { initializeAuth } from "~/utils/auth";
 
 export default function App() {
   // Initialize authentication when the app starts
   useEffect(() => {
     // Call the async function and handle any errors
-    initializeAuth().catch(error => {
-      console.error('Failed to initialize authentication:', error);
+    initializeAuth().catch((error) => {
+      console.error("Failed to initialize authentication:", error);
     });
   }, []);
 
