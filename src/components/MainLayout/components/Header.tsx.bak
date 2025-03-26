@@ -78,6 +78,13 @@ export default function Header() {
               >
                 Manage products
               </MenuItem>
+              {/* <MenuItem */}
+              //   component={RouterLink}
+              //   to="/admin/product-import"
+              //   onClick={handleClose}
+              // >
+              //   Upload and import
+              {/* </MenuItem> */}
             </Menu>
           </div>
         )}

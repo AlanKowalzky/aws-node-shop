@@ -12,9 +12,7 @@ export function useAvailableProducts() {
         // `${API_PATHS.bff}/product/available`
         // `${API_PATHS.product}/product/available`
         // `${API_PATHS.product}/products/available`
-        // `${API_PATHS.product.bff}/products`
-        // `${API_PATHS.bff}/products`
-        `${API_PATHS.product}/products`
+        `${API_PATHS.product.bff}/products`
       );
       return res.data;
     }
