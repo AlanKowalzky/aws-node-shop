@@ -11,10 +11,8 @@ import { Typography } from "@mui/material";
 
 function App() {
   return (
-     
     <MainLayout>
       <Routes>
-        
         <Route path="/" element={<PageProducts />} />
         <Route path="cart" element={<PageCart />} />
         <Route path="admin/orders">
@@ -30,9 +28,8 @@ function App() {
           path="*"
           element={<Typography variant="h1">Not found</Typography>}
         />
-   </Routes>
-      </MainLayout>
-     
+      </Routes>
+    </MainLayout>
   );
 }
 

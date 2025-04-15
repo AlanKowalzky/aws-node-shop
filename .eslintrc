@@ -2,7 +2,8 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "c:/progAWS3be/aws-backend-160325/nodejs-aws-shop-react-22032025-trae-task7"
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",

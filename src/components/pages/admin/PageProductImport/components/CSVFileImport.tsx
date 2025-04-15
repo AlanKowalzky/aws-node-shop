@@ -93,7 +93,10 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
       } else {
         window.dispatchEvent(
           new CustomEvent("global-toast", {
-            detail: { message: `Błąd wysyłania pliku: ${result.status}`, severity: "error" },
+            detail: {
+              message: `Błąd wysyłania pliku: ${result.status}`,
+              severity: "error",
+            },
           })
         );
       }
@@ -102,7 +105,10 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
       console.error("There was an error uploading the file", error);
       window.dispatchEvent(
         new CustomEvent("global-toast", {
-          detail: { message: "Wystąpił błąd podczas wysyłania pliku.", severity: "error" },
+          detail: {
+            message: "Wystąpił błąd podczas wysyłania pliku.",
+            severity: "error",
+          },
         })
       );
     }
