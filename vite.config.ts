@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  // server:{port: 3001},
+  server:{port: 3005},
   test: {
     globals: true,
     environment: "jsdom",
