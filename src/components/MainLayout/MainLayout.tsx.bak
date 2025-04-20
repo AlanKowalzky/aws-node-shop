@@ -28,7 +28,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <Header />
       <main>
         <Container sx={{ pb: 8 }} maxWidth="md">
-          {children}
+          <Outlet />
         </Container>
       </main>
       <Box
