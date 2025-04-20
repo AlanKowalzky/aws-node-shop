@@ -33,7 +33,7 @@ export default function Header() {
             underline="none"
             to="/"
           >
-            My Store Dream!
+            My Store!
           </Link>
         </Typography>
 
@@ -78,6 +78,13 @@ export default function Header() {
               >
                 Manage products
               </MenuItem>
+              {/* <MenuItem */}
+              //   component={RouterLink}
+              //   to="/admin/product-import"
+              //   onClick={handleClose}
+              // >
+              //   Upload and import
+              {/* </MenuItem> */}
             </Menu>
           </div>
         )}
