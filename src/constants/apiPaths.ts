@@ -15,7 +15,11 @@ const API_PATHS = {
   // import: "https://e890ytlqk5.execute-api.us-east-1.amazonaws.com/prod",
   // import: "https://k7hlwt4lhf.execute-api.us-east-1.amazonaws.com/prod
   import: "https://oerd3ti4s7.execute-api.us-east-1.amazonaws.com/prod",
-  bff: "https://cu7249owx3.execute-api.us-east-1.amazonaws.com/prod",
+  
+  // bff: "https://cu7249owx3.execute-api.us-east-1.amazonaws.com/prod",
+  // bff: "http://localhost:3000",
+  bff: "http://alankowalzky-bff-api-dev.us-east-1.elasticbeanstalk.com",
+  // bff: "http://alan-kowalzky-cart-api-dev.us-east-1.elasticbeanstalk.com",
   // bff: "https://k7hlwt4lhf.execute-api.us-east-1.amazonaws.com/prod",
   // bff: "https://e890ytlqk5.execute-api.us-east-1.amazonaws.com/prod",
   // cart: "https://cu7249owx3.execute-api.us-east-1.amazonaws.com/prod",
@@ -24,6 +28,7 @@ const API_PATHS = {
 // cart: "https://h4ti7chvtj5lm4rdttegfqyo3y0vabwg.lambda-url.us-east-1.on.aws",
 
 // cart: "http://alan-kowalzky-cart-api-dev.us-east-1.elasticbeanstalk.com/api",
-cart: "http://localhost:3000/cart"
+cart: "http://alan-kowalzky-cart-api-dev.us-east-1.elasticbeanstalk.com",
+// cart: "http://localhost:3000/cart"
 };
 export default API_PATHS;
